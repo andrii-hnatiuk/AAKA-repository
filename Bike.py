@@ -17,6 +17,10 @@ class Bike:
     def calculate_cost(self, minutes):
         return self.price_per_minute() * minutes
 
+    def lock_wheels(self):
+        self.wheels_locked = True
+        return True
+
 
 class Station:
 
