@@ -4,8 +4,15 @@ class Client:
         self.balance = balance
         self.name = name
     def get_balance(self):
-        pass
+        return self.balance
     def pay(self, amount):
-        pass
+        if amount > 0:
+            self.balance -= amount
+        else:
+            return False
     def add_balance(self, amount):
-        pass
+        if amount > 0:
+            self.balance += amount
+            return True
+        else:
+            return False
