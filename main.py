@@ -29,7 +29,7 @@ def main():
     print(f"На станцію '{station1.name}' додано 3 велосипеди.")
     print(f"На станцію '{station2.name}' додано 2 велосипеди.")
 
-    print("\n--- Крок 3: Створення клієнтів ---")
+    print("\nКрок 3: Створення клієнтів")
     client1 = Client(client_id=1, balance=400, name="Олександр")
     client2 = Client(client_id=2, balance=150, name="Марія")
     print(f"Клієнт 1: {client1.name}, баланс: {client1.get_balance()} грн")
@@ -66,11 +66,11 @@ def main():
     if missing_bike is None:
         print("[Повідомлення]: Вибачте, на цій станції зараз немає вільних велосипедів!")
 
-    print("\n--- Крок 6: Баланс клієнтів після поїздок ---")
+    print("\nКрок 6: Баланс клієнтів після поїздок")
     print(f"Баланс клієнта {client1.name}: {client1.get_balance()} грн")
     print(f"Баланс клієнта {client2.name}: {client2.get_balance()} грн")
 
-    print("\n--- Крок 7: Звіт адміністратора ---")
+    print("\nКрок 7: Звіт адміністратора")
     print(f"Станція '{station1.name}': {station1.count_bikes()} велосипедів.")
     print(f"Станція '{station2.name}': {station2.count_bikes()} велосипедів.")
     print(f"Станція '{empty_station.name}': {empty_station.count_bikes()} велосипедів.")
