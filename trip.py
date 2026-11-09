@@ -18,7 +18,7 @@ def block_bike_if_no_balance:
         return True
     return False
 
-def return_bike(client, bike, station, minutes)
+def return_bike(client, bike, station, minutes):
     cost = count_costs(bike, minutes)
     if not client.has_enough_balance(cost):
         bike.block()
