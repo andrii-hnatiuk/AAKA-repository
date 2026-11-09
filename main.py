@@ -73,7 +73,6 @@ def main():
     print("\nКрок 7: Звіт адміністратора")
     print(f"Станція '{station1.name}': {station1.count_bikes()} велосипедів.")
     print(f"Станція '{station2.name}': {station2.count_bikes()} велосипедів.")
-    print(f"Станція '{empty_station.name}': {empty_station.count_bikes()} велосипедів.")
     print(f"Загалом мережа заробила: {total_network_revenue} грн")
     
     print("\nДЕМОНСТРАЦІЮ ЗАВЕРШЕНО УСПІШНО")
