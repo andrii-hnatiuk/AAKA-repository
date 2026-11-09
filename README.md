@@ -136,3 +136,11 @@ balance баланс клієнта
   - Загалом мережа заробила: 225 грн
 
 ДЕМОНСТРАЦІЮ ЗАВЕРШЕНО УСПІШНО
+
+## Зміни після додаткового завдання 
+Змінено 1 файл: bikes.py.
+
+Класи: Bicycle і Station.
+
+Місць у коді змінилося 5: константа LOW_CHARGE, Bicycle.__init__, нові методи is_low_charge/is_available (одне місце), 
+Station.take_bike і новий Station.get_low_charge_bikes.
