@@ -7,7 +7,7 @@ PRICES = {
 }
 
 class Bike:
-    def init(self, bike_id, bike_type):
+    def __init__(self, bike_id, bike_type): 
         self.bike_id = bike_id
         self.bike_type = bike_type
 
