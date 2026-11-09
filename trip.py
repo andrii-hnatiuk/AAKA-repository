@@ -1,6 +1,5 @@
-def take_bike( station):
+def take_bike(station):
     bike = station.take_bike()
-
     if bike is None:
         return None
     return bike
@@ -12,16 +11,18 @@ def count_costs(bike, minutes):
         price_per_minute = 5
     return minutes * price_per_minute
 
-def block_bike_if_no_balance():
+def block_bike_if_no_balance(client, bike, amount):
     if not client.has_enough_balance(amount):
-        bike.block()
+        if hasattr(bike, "lock_wheels"):
+            bike.lock_wheels()
         return True
     return False
 
 def return_bike(client, bike, station, minutes):
     cost = count_costs(bike, minutes)
     if not client.has_enough_balance(cost):
-        bike.block()
+        if hasattr(bike, "lock_wheels"):
+            bike.lock_wheels()
         return None
 
     client.pay(cost)
