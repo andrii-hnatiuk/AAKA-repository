@@ -20,6 +20,5 @@ class Client:
         else:
             return False
 
-    # ДОДАЙ ЦЕЙ МЕТОД, ЩОБ ПЕРЕВІРКА БАЛАНСУ ПРАЦЮВАЛА БЕЗ ПОМИЛОК:
     def has_enough_balance(self, amount):
         return self.balance >= amount
