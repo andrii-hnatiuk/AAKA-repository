@@ -18,3 +18,16 @@ def block_bike_if_no_balance:
         return True
     return False
 
+def return_bike(client, bike, station, minutes)
+    cost = count_costs(bike, minutes)
+    if not client.has_enough_balance(cost):
+        bike.block()
+        return None
+
+    client.pay(cost)
+    station.return_bike(bike)
+
+    return cost
+
+def whole_sum(total, amount):
+    return total + amount
