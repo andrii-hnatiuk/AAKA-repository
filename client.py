@@ -3,16 +3,23 @@ class Client:
         self.client_id = client_id
         self.balance = balance
         self.name = name
+
     def get_balance(self):
         return self.balance
+
     def pay(self, amount):
         if amount > 0:
             self.balance -= amount
         else:
             return False
+
     def add_balance(self, amount):
         if amount > 0:
             self.balance += amount
             return True
         else:
             return False
+
+    # ДОДАЙ ЦЕЙ МЕТОД, ЩОБ ПЕРЕВІРКА БАЛАНСУ ПРАЦЮВАЛА БЕЗ ПОМИЛОК:
+    def has_enough_balance(self, amount):
+        return self.balance >= amount
